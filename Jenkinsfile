@@ -13,13 +13,5 @@ pipeline {
     }
   }
 
-    stage('Docker Build') {
-      steps {
-        sh '''
-          echo "Building image: ${FULL_IMAGE}"
-          docker build -t "${FULL_IMAGE}" .
-        '''
-      }
-    }
-
+    
 }
