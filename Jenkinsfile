@@ -19,7 +19,7 @@ pipeline {
       }
     }
   }
-  stage('Docker Build') {
+    stage('Docker Build') {
       steps {
         sh '''
           echo "Building image: ${FULL_IMAGE}"
